@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wadia El Khalloufi Chanaa | Estudiante de Ingeniería Biomédica</title>
+  <meta name="description" content="Portfolio profesional de Wadia El Khalloufi Chanaa: Ingeniería Biomédica, programación, análisis de datos, IA aplicada a salud y desarrollo web.">
+  <meta name="author" content="Wadia El Khalloufi Chanaa">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0aa2c0">
+  <link rel="canonical" href="https://wadidev.github.io/portfolio/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wadia El Khalloufi Chanaa | Portfolio profesional">
+  <meta property="og:description" content="Ingeniería Biomédica · Programación · Análisis de datos · IA aplicada a salud">
+  <meta property="og:image" content="images/Foto mia.png">
+  <meta property="og:image:alt" content="Fotografía de Wadia El Khalloufi Chanaa">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wadia El Khalloufi Chanaa | Portfolio profesional">
+  <meta name="twitter:description" content="Estudiante de Ingeniería Biomédica orientado a software, datos e IA aplicada a salud.">
+  <meta name="twitter:image" content="images/Foto mia.png">
+
+  <link rel="icon" type="image/png" href="images/Foto mia.png">
+
+  <style>
+    :root {
+      --primary: #0a2540;
+      --secondary: #425466;
+      --accent: #0aa2c0;
+      --accent-dark: #0889a3;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --border: #e1e4e8;
+      --muted: #6e7681;
+      --shadow: 0 12px 35px rgba(10, 37, 64, 0.08);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ===== NAV ===== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-content {
+      min-height: 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--primary);
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: 650;
+      font-size: 0.95rem;
+      transition: color 0.25s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--accent);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 5rem 0 3.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.8rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid rgba(10, 162, 192, 0.25);
+      background: rgba(10, 162, 192, 0.08);
+      color: var(--accent-dark);
+      border-radius: 999px;
+      font-weight: 750;
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      font-size: clamp(2.25rem, 6vw, 4.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+      margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+      color: var(--secondary);
+      font-weight: 650;
+      margin-bottom: 1rem;
+      max-width: 780px;
+    }
+
+    .hero-description {
+      color: var(--muted);
+      max-width: 720px;
+      font-size: 1.04rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      min-height: 46px;
+      padding: 0.8rem 1.1rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 12px 24px rgba(10, 162, 192, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--primary);
+      border: 1px solid var(--border);
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .tag {
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--secondary);
+      padding: 0.45rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 650;
+    }
+
+    .profile-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 1.6rem;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(10, 162, 192, 0.18), transparent 42%);
+      pointer-events: none;
+    }
+
+    .profile-photo {
+      width: 210px;
+      height: 210px;
+      margin: 0 auto 1.4rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid rgba(10, 162, 192, 0.28);
+      box-shadow: 0 18px 35px rgba(10, 37, 64, 0.12);
+      position: relative;
+    }
+
+    .quick-info {
+      position: relative;
+      list-style: none;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .quick-info li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--secondary);
+    }
+
+    .quick-info li:last-child {
+      border-bottom: none;
+    }
+
+    .quick-info strong {
+      color: var(--primary);
+    }
+
+    /* ===== SECTIONS ===== */
+    main {
+      padding-bottom: 3rem;
+    }
+
+    section {
+      padding: 3.5rem 0;
+    }
+
+    .section-heading {
+      margin-bottom: 2rem;
+    }
+
+    .section-kicker {
+      color: var(--accent-dark);
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      margin-bottom: 0.35rem;
+    }
+
+    h2 {
+      font-size: clamp(1.85rem, 3vw, 2.6rem);
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 0.7rem;
+    }
+
+    .section-description {
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.45rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(10, 162, 192, 0.45);
+      box-shadow: 0 18px 42px rgba(10, 37, 64, 0.12);
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.55rem;
+      letter-spacing: -0.025em;
+    }
+
+    .card p {
+      color: var(--secondary);
+      margin-bottom: 0.9rem;
+    }
+
+    .card ul {
+      color: var(--secondary);
+      padding-left: 1.1rem;
+      margin: 0.9rem 0;
+    }
+
+    .card li {
+      margin-bottom: 0.35rem;
+    }
+
+    .tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .tech {
+      display: inline-flex;
+      padding: 0.35rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(10, 162, 192, 0.08);
+      color: var(--accent-dark);
+      font-weight: 750;
+      font-size: 0.82rem;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 650;
+      margin-bottom: 0.75rem;
+    }
+
+    .timeline-card {
+      border-left: 5px solid var(--accent);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .skill-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--secondary);
+    }
+
+    .skill-item:last-child {
+      border-bottom: none;
+    }
+
+    .level {
+      white-space: nowrap;
+      color: var(--accent-dark);
+      font-weight: 800;
+      font-size: 0.86rem;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact-box {
+      background: linear-gradient(135deg, var(--primary), #123b63);
+      color: #fff;
+      border-radius: 28px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-box h2,
+    .contact-box p {
+      color: #fff;
+    }
+
+    .contact-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .contact-link {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 16px;
+      padding: 1rem;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .contact-link:hover {
+      background: rgba(255, 255, 255, 0.16);
+      transform: translateY(-2px);
+    }
+
+    .contact-link strong {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 750;
+      margin-bottom: 0.35rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border-radius: 14px;
+      font: inherit;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 3px solid rgba(10, 162, 192, 0.45);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .submit-button {
+      justify-self: start;
+      border: 0;
+      background: var(--accent);
+      color: #fff;
+      cursor: pointer;
+      font-weight: 850;
+      padding: 0.95rem 1.35rem;
+      border-radius: 999px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .submit-button:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+
+    .form-note {
+      color: rgba(255, 255, 255, 0.72) !important;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 1.2rem;
+      bottom: 1.2rem;
+      width: 48px;
+      height: 48px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-size: 1.35rem;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(10, 162, 192, 0.35);
+      z-index: 1200;
+    }
+
+    .back-to-top:hover {
+      background: var(--accent-dark);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+    }
+
+    .reveal-visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .hero-grid,
+      .grid-2,
+      .grid-3,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 3.2rem;
+      }
+
+      .profile-card {
+        max-width: 440px;
+      }
+
+      .nav-content {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 1rem 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      .nav-links {
+        gap: 0.75rem;
+      }
+
+      .nav-links a {
+        font-size: 0.88rem;
+      }
+
+      section {
+        padding: 2.4rem 0;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .profile-photo {
+        width: 170px;
+        height: 170px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wadia El Khalloufi Chanaa",
+    "jobTitle": "Estudiante de Ingeniería Biomédica",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Málaga",
+      "addressCountry": "ES"
+    },
+    "email": "mailto:wadiaaa20@gmail.com",
+    "url": "https://wadidev.github.io/portfolio/",
+    "sameAs": ["https://www.linkedin.com/in/wadia-el-khalloufi-chanaa-2a7196374/", "https://github.com/wadidev"]
+  }
+  </script>
+
+</head>
+
+<body>
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="container nav-content">
+      <a href="#inicio" class="brand">Wadia<span>.</span></a>
+      <div class="nav-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">🚀 Portfolio profesional</p>
+        <h1>Wadia El Khalloufi Chanaa</h1>
+        <p class="hero-subtitle">
+          Estudiante de Ingeniería Biomédica enfocado en software, análisis de datos, IA aplicada a salud y desarrollo de soluciones digitales.
+        </p>
+        <p class="hero-description">
+          Actualmente curso el Grado en Ingeniería de la Salud en la Universidad de Málaga. Estoy construyendo un perfil técnico con proyectos reales,
+          programación, documentación y análisis de datos. Busco prácticas o colaboraciones donde pueda aportar trabajo, aprendizaje rápido
+          y capacidad para resolver problemas con criterio de ingeniería.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-secondary" href="mailto:wadiaaa20@gmail.com?subject=Solicitud%20de%20CV">Solicitar CV</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/wadia-el-khalloufi-chanaa-2a7196374/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="hero-tags" aria-label="Áreas principales">
+          <span class="tag">Python</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">Java</span>
+          <span class="tag">Análisis de datos</span>
+          <span class="tag">Ingeniería Biomédica</span>
+          <span class="tag">IA</span>
+        </div>
+      </div>
+
+      <aside class="profile-card" aria-label="Resumen rápido del perfil">
+        <img src="images/Foto mia.png" alt="Fotografía de Wadia El Khalloufi Chanaa" class="profile-photo" width="210" height="210">
+        <ul class="quick-info">
+          <li><strong>Ubicación</strong><span>Málaga, España</span></li>
+          <li><strong>Formación</strong><span>Ingeniería Biomédica</span></li>
+          <li><strong>Intereses</strong><span>Software · Datos · IA</span></li>
+          <li><strong>Objetivo</strong><span>Prácticas / proyectos</span></li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Sobre mí</p>
+          <h2>Perfil técnico en crecimiento</h2>
+          <p class="section-description">
+            Estoy construyendo un perfil que une ingeniería biomédica, programación y análisis de datos. Busco oportunidades donde pueda aprender,
+            aportar capacidad de trabajo y aplicar mis conocimientos en problemas reales.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>🧠 Razonamiento técnico</h3>
+            <p>Capacidad para analizar problemas, estructurar soluciones y documentar procesos de forma clara.</p>
+          </article>
+
+          <article class="card">
+            <h3>💻 Programación</h3>
+            <p>Base en Python, Java, MATLAB y SQL, con interés en seguir desarrollando proyectos prácticos.</p>
+          </article>
+
+          <article class="card">
+            <h3>🔬 Tecnología sanitaria</h3>
+            <p>Interés en aplicaciones biomédicas, sistemas sanitarios, modelado y herramientas computacionales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Proyectos</p>
+          <h2>Proyectos y aprendizaje aplicado</h2>
+          <p class="section-description">
+            Selección de trabajos académicos y personales que reflejan mi evolución en ingeniería, programación y documentación técnica.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Landing page — D'Canela Dominican Barber</h3>
+            <p>
+              Web real para barbería local en Málaga, planteada como landing comercial orientada a reservas, SEO local y conversión desde móvil.
+            </p>
+            <ul>
+              <li>Diseño responsive con estética dark/premium y llamadas a la acción claras.</li>
+              <li>Secciones de servicios, precios, galería, reseñas y contacto.</li>
+              <li>Despliegue en GitHub Pages y optimización básica de SEO local.</li>
+            </ul>
+            <div class="tech-list">
+              <span class="tech">HTML5</span>
+              <span class="tech">CSS3</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">Responsive</span>
+              <span class="tech">GitHub Pages</span>
+            </div>
+            <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+              <a href="https://wadidev.github.io/dcanelabarber/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.35rem;background:var(--accent);color:#fff;text-decoration:none;padding:0.45rem 0.85rem;border-radius:999px;font-size:0.85rem;font-weight:700;">🌐 Ver web</a>
+              <a href="https://github.com/wadidev/dcanelabarber" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.35rem;background:#fff;color:var(--primary);text-decoration:none;padding:0.45rem 0.85rem;border-radius:999px;font-size:0.85rem;font-weight:700;border:1px solid var(--border);">💻 GitHub</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Portfolio web personal</h3>
+            <p>
+              Desarrollo de una web profesional para presentar formación, habilidades, experiencia y proyectos con estructura clara y navegación responsive.
+            </p>
+            <ul>
+              <li>Estructura semántica con HTML5.</li>
+              <li>Diseño responsive adaptado a móvil y escritorio.</li>
+              <li>Animaciones suaves y navegación activa con JavaScript.</li>
+            </ul>
+            <div class="tech-list">
+              <span class="tech">HTML5</span>
+              <span class="tech">CSS3</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">Responsive</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Gestión y verificación de datos</h3>
+            <p>
+              Experiencia práctica en organización documental, digitalización y control de calidad de datos en sistemas internos.
+            </p>
+            <ul>
+              <li>Clasificación de archivos físicos y digitales.</li>
+              <li>Verificación de información y control de errores.</li>
+              <li>Colaboración para mejorar tiempos de procesamiento.</li>
+            </ul>
+            <div class="tech-list">
+              <span class="tech">Excel</span>
+              <span class="tech">Gestión documental</span>
+              <span class="tech">Control de calidad</span>
+              <span class="tech">Datos</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Experiencia</p>
+          <h2>Experiencia laboral</h2>
+          <p class="section-description">
+            Experiencia en gestión documental, verificación de datos y trabajo en equipo dentro de entornos organizados.
+          </p>
+        </div>
+
+        <article class="card timeline-card">
+          <h3>Grabador de datos</h3>
+          <p class="meta">Organización y Guarda de Archivos, S.L. · Málaga · Julio - Agosto 2023 | Julio - Agosto 2025</p>
+          <ul>
+            <li>Clasificación, digitalización y gestión de archivos físicos y digitales.</li>
+            <li>Control de calidad y verificación de datos en sistemas internos.</li>
+            <li>Colaboración con el equipo para optimizar tiempos de procesamiento y organización documental.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="formacion">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Formación</p>
+          <h2>Formación académica</h2>
+        </div>
+
+        <article class="card timeline-card">
+            <h3>Grado en Ingeniería de la Salud</h3>
+            <p class="meta">Universidad de Málaga · Ingeniería Biomédica · 2022 - 2027</p>
+            <p>
+              Formación en programación, análisis de datos, documentación técnica y tecnologías aplicadas al ámbito sanitario.
+            </p>
+          </article>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Habilidades</p>
+          <h2>Competencias técnicas y personales</h2>
+          <p class="section-description">
+            Habilidades orientadas a ingeniería, programación, organización de información y comunicación profesional.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>💻 Programación y datos</h3>
+            <p>Conocimientos en Python, Java, MATLAB y SQL, con experiencia en análisis de datos, verificación y control de calidad adquirida tanto en el ámbito académico como profesional.</p>
+          </article>
+
+          <article class="card">
+            <h3>🔬 Ingeniería y documentación</h3>
+            <p>Formación en sistemas biomédicos y documentación técnica. Capacidad para estructurar y presentar resultados de forma clara y organizada.</p>
+          </article>
+
+          <article class="card">
+            <h3>🌐 Web e IA</h3>
+            <p>Nociones de HTML5, CSS3 y JavaScript aplicadas al desarrollo de interfaces. Uso y aprendizaje activo de herramientas de inteligencia artificial.</p>
+          </article>
+
+          <article class="card">
+            <h3>🤝 Habilidades personales</h3>
+            <p>Capacidad de trabajo en equipo, organización, atención al detalle y orientación a la resolución de problemas en entornos técnicos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container">
+        <div class="contact-box">
+          <p class="section-kicker">Contacto</p>
+          <h2>¿Hablamos?</h2>
+          <p>
+            Estoy abierto a prácticas, proyectos académicos, colaboraciones y oportunidades de aprendizaje relacionadas con ingeniería,
+            software, análisis de datos y tecnologías sanitarias.
+          </p>
+
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:wadiaaa20@gmail.com">
+              <strong>📧 Email</strong>
+              <span>wadiaaa20@gmail.com</span>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/wadia-el-khalloufi-chanaa-2a7196374/" target="_blank" rel="noopener noreferrer">
+              <strong>💼 LinkedIn</strong>
+              <span>Ver perfil profesional</span>
+            </a>
+            <div class="contact-link">
+              <strong>📍 Ubicación</strong>
+              <span>Málaga, España</span>
+            </div>
+          </div>
+
+          <form id="portfolio-form">
+            <div class="form-row">
+              <div>
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              </div>
+
+              <div>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+              </div>
+            </div>
+
+            <div>
+              <label for="motivo">Motivo del contacto *</label>
+              <input type="text" id="motivo" name="motivo" list="motivos" placeholder="Prácticas, colaboración, consulta..." required>
+              <datalist id="motivos">
+                <option value="Oportunidad de prácticas">
+                <option value="Colaboración en proyecto">
+                <option value="Consulta técnica">
+                <option value="Networking">
+                <option value="Otro">
+              </datalist>
+            </div>
+
+            <div>
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+
+            <button class="submit-button" type="submit">Preparar email</button>
+            <p class="form-note">El formulario abre tu correo con el mensaje preparado. También puedes escribirme directamente por email.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Wadia El Khalloufi Chanaa. Portfolio profesional.</p>
+      <p>Ingeniería Biomédica · Programación · Análisis de Datos · IA</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Volver arriba">↑</button>
+
+  <script>
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!prefersReducedMotion) {
+      const revealElements = document.querySelectorAll("section, .profile-card");
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach((element) => {
+        element.classList.add("reveal");
+        revealObserver.observe(element);
+      });
+    }
+
+    const navLinks = document.querySelectorAll(".nav-links a");
+    const sections = document.querySelectorAll("main section, header");
+
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navLinks.forEach((link) => {
+            link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+          });
+        }
+      });
+    }, { threshold: 0.45 });
+
+    sections.forEach((section) => {
+      if (section.id) navObserver.observe(section);
+    });
+
+    const backToTop = document.querySelector(".back-to-top");
+
+    window.addEventListener("scroll", () => {
+      backToTop.style.display = window.scrollY > 450 ? "flex" : "none";
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
+    });
+
+    const form = document.querySelector("#portfolio-form");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const nombre = document.querySelector("#nombre").value.trim();
+      const email = document.querySelector("#email").value.trim();
+      const motivo = document.querySelector("#motivo").value.trim();
+      const mensaje = document.querySelector("#mensaje").value.trim();
+
+      const subject = encodeURIComponent(`Contacto portfolio: ${motivo}`);
+      const body = encodeURIComponent(`Nombre: ${nombre}\nEmail: ${email}\nMotivo: ${motivo}\n\nMensaje:\n${mensaje}`);
+
+      window.location.href = `mailto:wadiaaa20@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+
+</html>

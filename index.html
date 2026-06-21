@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!-- Indica al navegador que este documento usa HTML5 -->
+
+<html lang="es">
+<!-- Etiqueta raíz del documento HTML -->
+<!-- lang="es" indica que el idioma principal es español (SEO y accesibilidad) -->
+
+<head>
+    <!-- Contiene metadatos y configuraciones, NO contenido visible -->
+
+    <meta charset="utf-8">
+    <!-- Define la codificación de caracteres -->
+    <!-- Permite mostrar correctamente tildes, ñ y símbolos -->
+
+    <meta name="viewport" content="width=device-width">
+    <!-- Hace que la página se adapte al ancho del dispositivo -->
+    <!-- Imprescindible para móviles -->
+
+    <title>Portfolio Wadia</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <meta name="description" content="Portfolio de Wadia, estudiante de ingeniería biomédica">
+    <!-- Descripción de la página para buscadores (SEO) -->
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <!-- Metadatos usados al compartir la web en redes sociales -->
+
+    <meta property="og:title" content="Portfolio de Wadia">
+    <!-- Título que se mostrará al compartir la web -->
+
+    <meta property="og:description" content="Estudiante de ingeniería biomédica">
+    <!-- Descripción que se mostrará al compartir -->
+
+    <meta property="og:image" content="/images/Imagen Wadia.jpg">
+    <!-- Imagen que se mostrará al compartir la página -->
+    <!-- En producción debería ser una URL absoluta -->
+
+    <meta property="og:alt" content="Una fotografía de Wadia El Khalloufi Chanaa">
+    <!-- Texto alternativo para accesibilidad -->
+
+    <meta name="robots" content="index, follow">
+    <!-- Indica a Google que puede indexar la página y seguir enlaces -->
+
+    <meta name="theme-color" content="#09f">
+    <!-- Color de la barra del navegador en móviles -->
+
+    <link rel="icon" type="image/jpg" href="images/Imagen Wadia.jpg">
+    <!-- Icono que aparece en la pestaña del navegador -->
+
+    <style>
+        /* CSS interno: estilos aplicados a la página */
+
+        h1 {
+            /*color: rgb(0 0 0 / 50%);*/
+            /* color: hsl(60, 100%, 1%) */
+            /* color: okclh() */
+            /*color: #09f;*/
+            border-width: 3px;
+            border-style: solid;
+            border-color: currentColor;
+
+        } 
+
+        .link{
+            color: red;
+        }
+
+        .link:hover{
+            outline: 2px solid red;
+        }
+
+        .link:active{
+            outline: 2px solid blue;
+        }
+
+        input:focus {
+            border: 1px solid yellow;
+        }
+
+        #show{
+            background: #09f;
+            color: white;
+            border: 0;
+        }
+
+        li:first-child{
+            color: pink;
+        }
+
+        li:last-child{
+            color: purple;
+        }
+        
+        body {
+            background: rgb(13, 203, 232);
+            /* Color de fondo del sitio */
+
+            font-family: sans-serif;
+            /* Fuente base del texto */
+        }
+
+        header, nav, main, aside {
+            margin: 20px;
+            /* Separación externa entre bloques principales */
+        }
+
+        nav a {
+            margin-right: 15px;
+            /* Espacio entre enlaces del menú */
+
+            text-decoration: none;
+            /* Quita el subrayado de los enlaces */
+
+            font-weight: bold;
+            /* Texto en negrita */
+
+            color: black;
+            /* Color del texto */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            /* Subraya el enlace al pasar el ratón */
+        }
+
+        aside {
+            background: rgba(255, 255, 255, 0.4);
+            /* Fondo semitransparente del contenido secundario */
+
+            padding: 15px;
+            /* Espacio interior */
+
+        }
+        section#contacto {
+            max-width: 500px;   /* limita el ancho */
+            margin: 0 auto;     /* centra la sección */
+        }
+
+        form {
+            max-width: 400px;   /* ancho del formulario */
+            margin: 0 auto;     /* centra el formulario */
+        }
+
+        fieldset {
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Contiene TODO el contenido visible de la página -->
+
+    <header>
+        <!-- Cabecera principal del sitio -->
+
+        <h1>Portfolio de Wadia</h1>
+        <!-- Título principal de la página (solo debe haber uno) -->
+
+        <p>
+            Estudiante de <strong>ingeniería biomédica</strong>
+        </p>
+        <!-- Texto introductorio -->
+        <!-- <strong> da énfasis semántico -->
+    </header>
+
+    <nav>
+        <!-- Menú de navegación principal -->
+
+        <a class="link" href="#experiencia">Experiencia</a>
+        <!-- Enlace interno que lleva a la sección con id="experiencia" -->
+
+        <a class="link" href="#sobre-mi">Sobre mí</a>
+        <!-- Enlace interno que lleva al aside -->
+
+        <a class="link" href="#contacto">Contacto</a>
+        <!-- Enlace interno que lleva a la sección de contacto -->
+    </nav>
+
+    <main>
+        <!-- Contenido principal del documento -->
+        <!-- SOLO debe haber un <main> por página -->
+
+        <section id="experiencia">
+    <h2>Experiencia y proyectos</h2>
+
+    <article>
+        <h3>Portfolio web personal</h3>
+        <p>
+            Desarrollo de un sitio web personal para mostrar perfil académico y proyectos,
+            aplicando HTML semántico y buenas prácticas de accesibilidad.
+        </p>
+        <p>
+            Tecnologías: HTML5, CSS3
+        </p>
+    </article>
+
+    <article>
+        <h3>Proyectos académicos – Ingeniería Biomédica</h3>
+        <p>
+            Desarrollo de trabajos prácticos relacionados con instrumentación biomédica
+            y análisis de señales durante la formación universitaria.
+        </p>
+        <p>
+            Tecnologías: Python, MATLAB
+        </p>
+    </article>
+
+    <article>
+        <h3>Formación autodidacta en desarrollo web</h3>
+        <p>
+            Aprendizaje práctico orientado al desarrollo frontend, centrado en estructura,
+            semántica y diseño responsive.
+        </p>
+        <p>
+            Tecnologías: HTML5, CSS3
+        </p>
+    </article>
+</section>
+
+
+        <section id="contacto">
+    <!-- Sección de contacto -->
+
+    <h2>Contacto</h2>
+
+    <!-- Información directa -->
+    <p>
+        Email:
+        <a href="mailto:wadiaaa20@gmail.com">
+            wadiaaa20@gmail.com
+        </a>
+    </p>
+
+    <p>
+        Teléfono:
+        <a href="tel:+34661193932">
+            +34 661 19 39 32
+        </a>
+    </p>
+
+    <!-- ===== FORMULARIO DE CONTACTO ===== -->
+    <form action="#" method="post">
+        <!-- action="#" = no envía a backend (por ahora) -->
+
+        <fieldset>
+    <legend>Formulario de contacto</legend>
+
+    <div>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+        <label for="empresa">Empresa:</label><br>
+        <input type="text" id="empresa" name="empresa">
+    </div>
+
+    <div>
+    <label for="motivo">Motivo del contacto:</label><br>
+
+    <input
+        type="text"
+        id="motivo"
+        name="motivo"
+        list="motivos"
+        placeholder="Selecciona o escribe uno"
+        required
+    >
+
+    <datalist id="motivos">
+        <option value="Prácticas">
+        <option value="Oferta de trabajo">
+        <option value="Colaboración">
+        <option value="Proyecto académico">
+        <option value="Otro">
+    </datalist>
+</div>
+
+
+    <div>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    </div>
+
+    <div>
+        <label>
+            <input type="checkbox" required>
+            Acepto el tratamiento de mis datos
+        </label>
+    </div>
+
+    <div>
+        <input type="submit" value="Enviar">
+    </div>
+    
+</fieldset>
+
+
+    </form>
+</section>
+
+
+
+    </main>
+
+    <aside id="sobre-mi">
+    <h2>Sobre mí</h2>
+
+    <img
+        src="images/Foto mia.png"
+        width="200"
+        height="200"
+        alt="Foto de Wadia"
+    >
+
+    <p>
+        Estudiante de ingeniería biomédica interesada en tecnología y desarrollo web.
+    </p>
+
+    <details>
+        <video controls width="400" poster="images/preview.jpg">
+    <source src="videos/presentacion.mp4" type="video/mp4">
+</video>
+
+        <summary>Más sobre mí</summary>
+        <p>
+            Me interesa el desarrollo frontend, la accesibilidad web
+            y la aplicación de la tecnología en el ámbito sanitario.
+        </p>
+    </details>
+</aside>
+
+
+<footer>
+    <p>© 2025 Wadia El Khalloufi Chanaa</p>
+    <p>Estudiante de Ingeniería Biomédica</p>
+    <p>
+        Email:
+        <a href="mailto:wadiaaa20@gmail.com">wadiaaa20@gmail.com</a>
+        <a
+            href="https://www.linkedin.com/in/wadia-el-khalloufi-chanaa-2a7196374/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Perfil de LinkedIn de Wadia El Khalloufi Chanaa"
+        >
+            LinkedIn
+        </a>
+    </p>
+    
+
+</footer>
+
+</body>
+</html>
