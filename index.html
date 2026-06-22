@@ -378,6 +378,41 @@
       font-size: 0.82rem;
     }
 
+    .project-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+
+    .project-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.55rem 0.9rem;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.86rem;
+      font-weight: 750;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-button:hover,
+    .project-button:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(10, 162, 192, 0.2);
+    }
+
+    .project-button-secondary {
+      background: #fff;
+      color: var(--primary);
+      border-color: var(--border);
+    }
+
     .meta {
       color: var(--muted);
       font-size: 0.95rem;
@@ -766,9 +801,9 @@
               <span class="tech">Responsive</span>
               <span class="tech">GitHub Pages</span>
             </div>
-            <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
-              <a href="https://wadidev.github.io/dcanelabarber/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.35rem;background:var(--accent);color:#fff;text-decoration:none;padding:0.45rem 0.85rem;border-radius:999px;font-size:0.85rem;font-weight:700;">🌐 Ver web</a>
-              <a href="https://github.com/wadidev/dcanelabarber" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.35rem;background:#fff;color:var(--primary);text-decoration:none;padding:0.45rem 0.85rem;border-radius:999px;font-size:0.85rem;font-weight:700;border:1px solid var(--border);">💻 GitHub</a>
+            <div class="project-actions">
+              <a class="project-button" href="https://wadidev.github.io/dcanelabarber/" target="_blank" rel="noopener noreferrer">Ver web</a>
+              <a class="project-button project-button-secondary" href="https://github.com/wadidev/dcanelabarber" target="_blank" rel="noopener noreferrer">Ver código</a>
             </div>
           </article>
 
@@ -789,6 +824,9 @@
               <span class="tech">WFDB</span>
             </div>
             <p class="meta" style="margin-top:1rem;">Proyecto educativo; no destinado a uso diagnóstico ni clínico.</p>
+            <div class="project-actions">
+              <a class="project-button project-button-secondary" href="https://github.com/wadidev/ecg-explorer" target="_blank" rel="noopener noreferrer">Ver código</a>
+            </div>
           </article>
 
           <article class="card">
@@ -808,6 +846,30 @@
               <span class="tech">NumPy</span>
             </div>
             <p class="meta" style="margin-top:1rem;">Datos simulados; no destinado a uso diagnóstico ni clínico.</p>
+            <div class="project-actions">
+              <a class="project-button project-button-secondary" href="https://github.com/wadidev/dashboard-constantes-vitales" target="_blank" rel="noopener noreferrer">Ver código</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>WadiDev — Generador de presupuestos</h3>
+            <p>
+              Landing estática para negocios locales con un configurador que calcula una estimación y prepara el contacto mediante WhatsApp.
+            </p>
+            <ul>
+              <li>Selección de tipo de web, servicios extra y urgencia.</li>
+              <li>Cálculo automático con desglose del precio estimado.</li>
+              <li>Interfaz responsive desarrollada sin frameworks.</li>
+            </ul>
+            <div class="tech-list">
+              <span class="tech">HTML5</span>
+              <span class="tech">CSS3</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">Responsive</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-button project-button-secondary" href="https://github.com/wadidev/wadidev" target="_blank" rel="noopener noreferrer">Ver código</a>
+            </div>
           </article>
 
           <article class="card">
@@ -825,6 +887,9 @@
               <span class="tech">CSS3</span>
               <span class="tech">JavaScript</span>
               <span class="tech">Responsive</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-button project-button-secondary" href="https://github.com/wadidev/portfolio-wadia" target="_blank" rel="noopener noreferrer">Ver código</a>
             </div>
           </article>
 
