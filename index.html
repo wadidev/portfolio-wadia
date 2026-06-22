@@ -5,10 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wadia El Khalloufi Chanaa | Estudiante de Ingeniería Biomédica</title>
-  <meta name="description" content="Portfolio profesional de Wadia El Khalloufi Chanaa, estudiante de Ingeniería Biomédica orientado a programación, análisis de datos, IA y tecnologías sanitarias.">
+  <meta name="description" content="Portfolio profesional de Wadia El Khalloufi Chanaa: Ingeniería Biomédica, programación, análisis de datos, IA aplicada a salud y desarrollo web.">
   <meta name="author" content="Wadia El Khalloufi Chanaa">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0aa2c0">
+  <link rel="canonical" href="https://wadidev.github.io/portfolio/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Wadia El Khalloufi Chanaa | Portfolio profesional">
@@ -630,6 +631,24 @@
       }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wadia El Khalloufi Chanaa",
+    "jobTitle": "Estudiante de Ingeniería Biomédica",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Málaga",
+      "addressCountry": "ES"
+    },
+    "email": "mailto:wadiaaa20@gmail.com",
+    "url": "https://wadidev.github.io/portfolio/",
+    "sameAs": ["https://www.linkedin.com/in/wadia-el-khalloufi-chanaa-2a7196374/", "https://github.com/wadidev"]
+  }
+  </script>
+
 </head>
 
 <body>
@@ -652,17 +671,17 @@
         <p class="eyebrow">🚀 Portfolio profesional</p>
         <h1>Wadia El Khalloufi Chanaa</h1>
         <p class="hero-subtitle">
-          Estudiante de Ingeniería Biomédica orientado a software, análisis de datos e IA aplicada a salud.
+          Estudiante de Ingeniería Biomédica enfocado en software, análisis de datos, IA aplicada a salud y desarrollo de soluciones digitales.
         </p>
         <p class="hero-description">
-          Actualmente curso el Grado en Ingeniería de la Salud en la Universidad de Málaga. Me interesa aplicar la programación,
-          el razonamiento técnico y las herramientas computacionales para resolver problemas de ingeniería, especialmente en
-          tecnologías sanitarias y sistemas biomédicos.
+          Actualmente curso el Grado en Ingeniería de la Salud en la Universidad de Málaga. Estoy construyendo un perfil técnico con proyectos reales,
+          programación, documentación y análisis de datos. Busco prácticas o colaboraciones donde pueda aportar trabajo, aprendizaje rápido
+          y capacidad para resolver problemas con criterio de ingeniería.
         </p>
 
         <div class="hero-buttons">
           <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
-          <a class="btn btn-secondary" href="Currículum Wadia.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+          <a class="btn btn-secondary" href="mailto:wadiaaa20@gmail.com?subject=Solicitud%20de%20CV">Solicitar CV</a>
           <a class="btn btn-secondary" href="https://www.linkedin.com/in/wadia-el-khalloufi-chanaa-2a7196374/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
 
@@ -733,12 +752,12 @@
           <article class="card">
             <h3>Landing page — D'Canela Dominican Barber</h3>
             <p>
-              Web completa para barbería local en Málaga con más de 1.200 reseñas en Google. Proyecto real, desplegado y accesible en producción.
+              Web real para barbería local en Málaga, planteada como landing comercial orientada a reservas, SEO local y conversión desde móvil.
             </p>
             <ul>
-              <li>Diseño dark elegante con vídeo de fondo y galería de trabajos.</li>
-              <li>Datos reales extraídos de Google Maps: horario, dirección, teléfono y reseñas.</li>
-              <li>Desplegado en GitHub Pages con vídeo alojado en YouTube.</li>
+              <li>Diseño responsive con estética dark/premium y llamadas a la acción claras.</li>
+              <li>Secciones de servicios, precios, galería, reseñas y contacto.</li>
+              <li>Despliegue en GitHub Pages y optimización básica de SEO local.</li>
             </ul>
             <div class="tech-list">
               <span class="tech">HTML5</span>
@@ -754,9 +773,47 @@
           </article>
 
           <article class="card">
+            <h3>ECG Explorer</h3>
+            <p>
+              Aplicación educativa en Python para visualizar señales ECG públicas o sintéticas, aplicar filtrado y estudiar picos R e intervalos RR.
+            </p>
+            <ul>
+              <li>Carga de registros públicos MIT-BIH mediante WFDB.</li>
+              <li>Señal sintética de respaldo cuando no hay conexión.</li>
+              <li>Procesamiento modular y pruebas automatizadas básicas.</li>
+            </ul>
+            <div class="tech-list">
+              <span class="tech">Python</span>
+              <span class="tech">Streamlit</span>
+              <span class="tech">SciPy</span>
+              <span class="tech">WFDB</span>
+            </div>
+            <p class="meta" style="margin-top:1rem;">Proyecto educativo; no destinado a uso diagnóstico ni clínico.</p>
+          </article>
+
+          <article class="card">
+            <h3>Dashboard de constantes vitales simuladas</h3>
+            <p>
+              Dashboard educativo para explorar series temporales completamente sintéticas mediante métricas, gráficas y escenarios reproducibles.
+            </p>
+            <ul>
+              <li>Análisis con Pandas y visualización con Matplotlib.</li>
+              <li>Escenarios fisiológicos artificiales y descarga CSV.</li>
+              <li>Pruebas para generación, clasificación y resumen de datos.</li>
+            </ul>
+            <div class="tech-list">
+              <span class="tech">Python</span>
+              <span class="tech">Streamlit</span>
+              <span class="tech">Pandas</span>
+              <span class="tech">NumPy</span>
+            </div>
+            <p class="meta" style="margin-top:1rem;">Datos simulados; no destinado a uso diagnóstico ni clínico.</p>
+          </article>
+
+          <article class="card">
             <h3>Portfolio web personal</h3>
             <p>
-              Desarrollo de una web profesional para presentar formación, habilidades, experiencia y proyectos.
+              Desarrollo de una web profesional para presentar formación, habilidades, experiencia y proyectos con estructura clara y navegación responsive.
             </p>
             <ul>
               <li>Estructura semántica con HTML5.</li>
@@ -890,7 +947,7 @@
             </div>
           </div>
 
-          <form action="mailto:wadiaaa20@gmail.com" method="POST" enctype="text/plain">
+          <form id="portfolio-form">
             <div class="form-row">
               <div>
                 <label for="nombre">Nombre *</label>
@@ -920,8 +977,8 @@
               <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
             </div>
 
-            <button class="submit-button" type="submit">Enviar mensaje</button>
-            <p class="form-note">El formulario necesita un ID real de Formspree para funcionar. También puedes contactarme directamente por email.</p>
+            <button class="submit-button" type="submit">Preparar email</button>
+            <p class="form-note">El formulario abre tu correo con el mensaje preparado. También puedes escribirme directamente por email.</p>
           </form>
         </div>
       </div>
@@ -984,12 +1041,20 @@
       window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
     });
 
-    const form = document.querySelector("form");
+    const form = document.querySelector("#portfolio-form");
 
     form.addEventListener("submit", (event) => {
-      const button = form.querySelector("button[type='submit']");
-      button.textContent = "Enviando...";
-      button.disabled = true;
+      event.preventDefault();
+
+      const nombre = document.querySelector("#nombre").value.trim();
+      const email = document.querySelector("#email").value.trim();
+      const motivo = document.querySelector("#motivo").value.trim();
+      const mensaje = document.querySelector("#mensaje").value.trim();
+
+      const subject = encodeURIComponent(`Contacto portfolio: ${motivo}`);
+      const body = encodeURIComponent(`Nombre: ${nombre}\nEmail: ${email}\nMotivo: ${motivo}\n\nMensaje:\n${mensaje}`);
+
+      window.location.href = `mailto:wadiaaa20@gmail.com?subject=${subject}&body=${body}`;
     });
   </script>
 </body>
